@@ -30,9 +30,9 @@ const navigate = useNavigate()
             animate={{scale:1}}
             transition={{delay:0}}
             src={Dragon} alt='draggy dragon'
-            className='w-[50%] max-md:absolute max-md:w-[80%] hover:grayscale rounded-xl'
+            className='w-[50%] h-[450px] max-md:absolute max-md:w-[80%] hover:grayscale rounded-xl'
           />
-          <div className='p-10 text-justify w-[50%] max-md:w-full max-md:px-5 max-md:z-10 max-md:bg-slate-950 max-md:bg-opacity-70 flex flex-col'>
+          <div className='px-10 text-justify w-[50%] max-md:w-full max-md:px-5 max-md:z-10 max-md:bg-slate-950 max-md:bg-opacity-70 flex flex-col'>
             <About />
           </div>
         </div>

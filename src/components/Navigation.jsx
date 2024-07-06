@@ -34,7 +34,7 @@ export const Navigation = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="link py-2 px-3 bg-red-600 rounded-l-full text-slate-50 hover:text-slate-100 hover:bg-slate-950" href="https://www.dextools.io/app/en/ether/pair-explorer/0x6e68fae720d991c6706cb8b618d0ee8941845896?t=1718724523236">
+          <Link className="link py-2 px-3 bg-[#ff6200] rounded-l-full text-slate-50 hover:text-slate-100 hover:bg-slate-950" href="https://www.dextools.io/app/en/ether/pair-explorer/0x6e68fae720d991c6706cb8b618d0ee8941845896?t=1718724523236">
             Chart
           </Link>
           <Link className="link py-2 px-3 bg-white rounded-r-full text-gray-950 hover:text-slate-100 hover:bg-slate-950" href="https://app.uniswap.org/swap?outputCurrency=0xd12a99dbc40036cec6f1b776dccd2d36f5953b94&chain=ethereum">
