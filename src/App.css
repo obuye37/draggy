@@ -1,0 +1,68 @@
+
+.logo {
+  width: 4rem;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ff6200aa);
+}
+
+header {
+  padding: 0 !important;
+}
+
+
+
+/* @keyframes content {
+  to {
+    scale: 1;
+    visibility: visible;
+    opacity: 1;
+  }
+} */
+/* .intro-image{
+  top:0;
+  right: -50px;
+  opacity: 1;
+  filter: grayscale(100%);
+  z-index: 1;
+  animation-name: image-intro;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10000ms;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes image-intro {
+  80% {
+    transform: translateY(0px);
+    scale: 1.5; 
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px); 
+    filter: grayscale(0);
+    scale: 1; 
+    opacity: 1;
+  }
+} */
+
+
+
+
+
+#about {
+  transform: translate(0px);
+  transition-property: transform;
+  transition-delay: 500ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2000ms;
+  transform-origin: bottom;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
