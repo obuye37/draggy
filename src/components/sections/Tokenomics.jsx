@@ -62,7 +62,7 @@ const Tokenomics = () => {
               duration: 5, 
               ease: 'easeInOut',
             }}
-            viewport={{amount: 0.4}}
+            viewport={{amount: 0.4, once: true}}
             style={{
               objectFit:"contain",
               objectPosition:"center",
