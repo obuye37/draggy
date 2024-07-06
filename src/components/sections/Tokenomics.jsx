@@ -1,24 +1,24 @@
-import { Card, Chip } from '@nextui-org/react'
+import { Card, Chip, Snippet } from '@nextui-org/react'
 import React, {useState} from 'react'
 import { delay, motion } from 'framer-motion'
 import TokenomicsImage from '../../assets/images/draggy2.jpg'
 
 const Tokenomics = () => {
     const [copied, setCopied] = useState(false)
-    const handleOnclick = (e) =>{
-        e.preventDefault()
-        const copyText = async () => {
-            await navigator.clipboard.writeText("0xd12A99dbC40036CEc6f1b776dccd2d36f5953B94")
-        }
-
-        if(copyText) {
-            console.log(copyText)
-            setCopied(true)
-        }
-        
-    }
+    let toast = ""
+        const copyText = async (text) => {
+          try {
+             await navigator.clipboard.writeText(text)
+             setCopied(true)
+          } catch (error) {
+            console.log("failed to copy")
+            toast = "failed to copy"
+          }
+           
+        }       
   return (
     <Card id='tokenomics'className='w-[80%] my-32 relative bg-transparent p-10 flex-row'>
+      {/* <Toas */}
       <div className='flex flex-col gap-5 w-[60%]'> 
       <motion.div
             initial={{opacity: 0}}
@@ -34,11 +34,10 @@ const Tokenomics = () => {
               <Chip className='rounded-r-sm bg-red-700 text-white'>Total Supply:</Chip>
               <Chip className='rounded-l-sm'>420,690,000,000,000</Chip>
           </div>
-          <div className='_caddress max-md:flex z-10'>
-              <Chip className='rounded-r-sm bg-red-700 text-white'>C.A</Chip>
-              <Chip className='rounded-l-sm select-none'>0xd12A99dbC40036CEc6f1b776dccd2d36f5953B94 <span className={`text-black font-extrabold mx-4 cursor-pointer`} 
-              onClick={handleOnclick}
-              >{copied ? "copied" : "copy"}</span></Chip>
+          <div className='_caddress max-md:flex z-10 flex items-center'>
+              <Chip className='rounded-r-sm bg-red-700 text-white py-[1.15rem]'>C.A</Chip>
+              <Snippet size='sm' className='rounded-l-none text-lg select-none bg-[#d4d4d8]'>0xd12A99dbC40036CEc6f1b776dccd2d36f5953B94</Snippet>
+              
           </div>
           <div className='token_d text-white rounded-sm p-4'>
               Liquidity burnt & Contract Renounced. 
