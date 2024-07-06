@@ -54,7 +54,7 @@ const Tokenomics = () => {
               transform: 'scale(.5)',
             }}
             whileInView={{
-              transform: 'translateY(0px) scale(1)',
+              transform: 'scale(1)',
               filter: 'grayscale(0%)',
               opacity: 1,
             }}
@@ -62,7 +62,7 @@ const Tokenomics = () => {
               duration: 5, 
               ease: 'easeInOut',
             }}
-            viewport={{amount: 0.6}}
+            viewport={{amount: 0.4}}
             style={{
               objectFit:"contain",
               objectPosition:"center",

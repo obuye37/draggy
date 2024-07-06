@@ -6,6 +6,7 @@ const Typewriter = ({ text }) => {
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
+    setDisplayedText('')
     let currentIndex = 0;
     const intervalId = setInterval(() => {
       setDisplayedText((prev) => prev + text[currentIndex]);
@@ -24,7 +25,7 @@ const Typewriter = ({ text }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: isComplete ? 1 : 0.5 }}
       transition={{ duration: 1 }}
-      style={{ fontFamily: 'monospace', fontSize: '16px', color:'wheat' }}
+      style={{ fontFamily: 'monospace', fontSize: '16px', color:'#f9f290' }}
     >
       {displayedText}
     </motion.div>
